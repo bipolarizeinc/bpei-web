@@ -1,0 +1,3 @@
+import Link from "next/link";
+
+export default function ContactPage(){return <section className="section"><p className="eyebrow">Contact BPEI</p><h2>Bring us<br/><em>your thing.</em></h2><p className="section-intro">BI POLARIZE ENTERPRISES, INC. operates 24/7 from Ogden, Utah. Start with the intake channel so P.O.L.A.R. can capture the idea, context, contradictions, and intended outcome before the work is scoped.</p><div className="actions"><Link className="button" href="/intake">Open Intake Channel</Link><a className="button button-ghost" href="mailto:YourThing@PolarPaw.Online">YourThing@PolarPaw.Online</a></div></section>}
