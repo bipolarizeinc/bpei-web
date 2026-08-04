@@ -8,9 +8,10 @@ export const metadata: Metadata = {
 };
 
 const nav = [
+  ["Ecosystem", "/ecosystem"],
+  ["ETAS", "/etas"],
   ["Services", "/services"],
   ["Method", "/#method"],
-  ["P.O.L.A.R.", "/#polar"],
   ["About", "/about"],
   ["Contact", "/contact"],
 ] as const;
@@ -24,15 +25,44 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <span className="brand-mark">BI</span>
             <span>POLARIZE ENTERPRISES, INC.</span>
           </Link>
-          <nav aria-label="Primary navigation">
-            {nav.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
+
+          <nav className="desktop-nav" aria-label="Primary navigation">
+            {nav.map(([label, href]) => (
+              <Link key={href} href={href}>{label}</Link>
+            ))}
           </nav>
-          <Link className="button button-small" href="/intake">Start Your Blueprint</Link>
+
+          <div className="header-actions">
+            <Link className="button button-small desktop-cta" href="/intake">Tell Us About Your Thing</Link>
+            <details className="mobile-menu">
+              <summary aria-label="Open navigation menu">Menu</summary>
+              <div className="mobile-menu-panel">
+                {nav.map(([label, href]) => (
+                  <Link key={href} href={href}>{label}</Link>
+                ))}
+                <Link className="button button-small" href="/intake">Tell Us About Your Thing</Link>
+              </div>
+            </details>
+          </div>
         </header>
+
         <main>{children}</main>
+
         <footer className="site-footer">
-          <div><strong>BI POLARIZE ENTERPRISES, INC.</strong><p>Off the Wall and Out of the Box.</p></div>
-          <div><p>Ogden, Utah · Open 24/7</p><p>© {new Date().getFullYear()} BPEI. All rights reserved.</p></div>
+          <div>
+            <strong>BI POLARIZE ENTERPRISES, INC.</strong>
+            <p>Off the Wall and Out of the Box.</p>
+          </div>
+          <div className="footer-links" aria-label="Footer navigation">
+            <Link href="/ecosystem">Ecosystem</Link>
+            <Link href="/etas">ETAS</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/intake">Start Here</Link>
+          </div>
+          <div>
+            <p>Ogden, Utah · Open 24/7</p>
+            <p>© {new Date().getFullYear()} BPEI. All rights reserved.</p>
+          </div>
         </footer>
       </body>
     </html>
