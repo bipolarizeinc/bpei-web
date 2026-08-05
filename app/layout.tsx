@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 const nav = [
   ["Ecosystem", "/ecosystem"],
   ["ETAS", "/etas"],
+  ["Academy", "/academy"],
+  ["Funding", "/lender-readiness"],
   ["Services", "/services"],
   ["Method", "/#method"],
   ["About", "/about"],
@@ -58,6 +60,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <div className="footer-links" aria-label="Footer navigation">
             <Link href="/ecosystem">Ecosystem</Link>
             <Link href="/etas">ETAS</Link>
+            <Link href="/academy">Academy</Link>
+            <Link href="/lender-readiness">Lender Readiness</Link>
             <Link href="/services">Services</Link>
             <Link href="/intake">Start Here</Link>
           </div>
