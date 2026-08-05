@@ -7,6 +7,8 @@ const visualRoutes: Record<string, string> = {
   "/ecosystem": "ecosystem",
   "/etas": "etas",
   "/about": "about",
+  "/lender-readiness": "ecosystem",
+  "/academy": "etas",
 };
 
 export default function RouteVisual() {
