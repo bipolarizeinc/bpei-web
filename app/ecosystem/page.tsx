@@ -61,7 +61,7 @@ const modules = [
     title: "BPEI Lender Readiness System™",
     description:
       "Engineers stronger funding readiness through structure, documentation, financial narrative, and application positioning.",
-    href: "/services",
+    href: "/lender-readiness",
     action: "Explore Funding Readiness",
   },
   {
@@ -69,7 +69,7 @@ const modules = [
     title: "BPEI Academy™",
     description:
       "Delivers education, guided implementation, operational training, and enterprise development resources.",
-    href: "/contact",
+    href: "/academy",
     action: "View Academy",
   },
   {
