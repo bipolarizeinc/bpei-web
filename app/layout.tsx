@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import RouteVisual from "./route-visual";
+import PolarVideoSystem from "./components/PolarVideoSystem";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </header>
 
         <RouteVisual />
+        <PolarVideoSystem />
         <main>{children}</main>
 
         <footer className="site-footer">
