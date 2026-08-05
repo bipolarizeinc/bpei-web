@@ -125,8 +125,8 @@ const products = [
     description:
       "Business positioning, documentation, financial narrative, application preparation, and funding-readiness engineering. Do not merely apply. Engineer approval.",
     outcomes: ["Funding narrative", "Document readiness", "Application positioning"],
-    href: "/intake",
-    action: "Assess Readiness",
+    href: "/lender-readiness",
+    action: "Explore Lender Readiness",
   },
 ];
 
