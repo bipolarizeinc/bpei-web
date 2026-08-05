@@ -3,6 +3,7 @@ import Link from "next/link";
 import RouteVisual from "./route-visual";
 import PolarVideoSystem from "./components/PolarVideoSystem";
 import "./globals.css";
+import "./polar-video.css";
 
 export const metadata: Metadata = {
   title: "BI POLARIZE ENTERPRISES, INC.",
