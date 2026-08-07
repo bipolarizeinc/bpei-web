@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BPEI Flagship 001 — What Is Bipolarization?</title>
+<style>
+html,body{margin:0;background:#05080E;color:#F6F6F2;font-family:Arial,sans-serif;overflow:hidden}
+[data-composition-id="bpei-flagship-001"]{position:relative;width:1920px;height:1080px;background:#05080E;overflow:hidden}
+.scene{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:110px 120px;box-sizing:border-box;background:#05080E}
+.kicker{font-size:28px;font-weight:800;letter-spacing:.08em;color:#00E5FF;margin-bottom:70px}
+h1{font-size:88px;line-height:.98;max-width:1200px;margin:0 0 50px;font-weight:900;letter-spacing:-.03em}
+p{font-size:34px;line-height:1.35;max-width:1250px;margin:0;padding:28px 34px;border:1px solid rgba(255,179,0,.55);background:rgba(5,8,14,.72);border-radius:20px}
+.footer{position:absolute;left:120px;bottom:48px;font-size:23px;color:#FFB300;font-weight:800;letter-spacing:.05em}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+</head>
+<body>
+<div id="root" data-composition-id="bpei-flagship-001" data-width="1920" data-height="1080" data-start="0" data-duration="75" data-track-index="1">
+  <section class="scene" id="scene1"><div class="kicker">P.O.L.A.R. // FLAGSHIP EXPLAINER 001</div><h1>WHAT IS BIPOLARIZATION?</h1><p>The system behind unconventional innovation.</p><div class="footer">BI POLARIZE ENTERPRISES, INC. // OFF THE WALL AND OUT OF THE BOX</div></section>
+</div>
+<audio id="approved-audio" data-start="0" data-duration="75" data-track-index="2" src="assets/BPEI-LAUNCH-001_HD_ASSET_POLAR_REVIEW.mp4" data-volume="1"></audio>
+<script>
+window.__timelines=window.__timelines||{};
+const tl=gsap.timeline({paused:true});
+tl.from('#scene1 .kicker',{y:30,opacity:0,duration:.6,ease:'power3.out'},.2);
+tl.from('#scene1 h1',{x:-60,opacity:0,duration:.8,ease:'expo.out'},.35);
+tl.from('#scene1 p',{scale:.97,opacity:0,duration:.7,ease:'power2.out'},.55);
+tl.from('#scene1 .footer',{y:20,opacity:0,duration:.5,ease:'sine.out'},.8);
+window.__timelines['bpei-flagship-001']=tl;
+</script>
+</body>
+</html>
